@@ -1,1 +1,1 @@
-My Portfolio website
+My Portfolio website's code and assets.
