@@ -170,9 +170,9 @@ section {
 
 .section__pic-container {
     display: flex;
-    height: 400px;
-    width: 400px;
-    margin: auto 0;
+        height: 400px;
+        width: 400px;
+        margin: auto 0;
 }
 
 .section__text {
@@ -182,10 +182,12 @@ section {
 
 .section__text p {
     font-weight: 600;
+    cursor: default;
 }
 
 .section__text__p1 {
-   text-align: center; 
+   text-align: center;
+   cursor: default;
 }
 .section__text__p2 {
    font-size: 1.75rem;
@@ -195,6 +197,7 @@ section {
 .title {
     font-size: 3rem;
     text-align: center;
+    cursor: default;
 }
 
 #socials-container {
@@ -299,6 +302,7 @@ section {
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
     text-align: center;
+    cursor: default;
 }
 
 .section-container {
@@ -310,6 +314,14 @@ section {
     height: 400px;
     width: 400px;
     margin: auto 0;
+}
+
+.about-badges {
+    cursor: default;
+}
+
+.text-container {
+    cursor: default;
 }
 
 /* EXPERIENCE SECTION */
@@ -343,7 +355,7 @@ section {
 article {
     display: flex;
     width: 10rem;
-    justify-content: space-around;
+    justify-content: flex-start;
     gap: 0.5rem;
 }
 
@@ -411,5 +423,17 @@ article .icon {
 }
 
 .contact-icon {
+    cursor: default;
+}
+
+/* FOOTER SECTION */
+
+footer {
+    height: 26vh;
+    margin: 0 1rem;
+}
+
+footer p {
+    text-align: center;
     cursor: default;
 }
