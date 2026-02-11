@@ -1,9 +1,72 @@
-<!--<!doctype html>
+<!doctype html>
 <html>
-    <--<head>
+    <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width+device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>API Demo</title>
+        <link rel="stylesheet" href="style.css" />
+
+        <style>
+            body {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                min-height: 100vh;
+                text-align: center;
+                padding: 2rem;
+            }
+
+            #loadBtn {
+                font-family: "Poppins", sans-serif;
+                font-weight: 600;
+                padding: 1rem 2rem;
+                border-radius: 2rem;
+                border: rgb(53, 53, 53) 0.1rem solid;
+                background: rgb(53, 53, 53);
+                color: white;
+                cursor: pointer;
+                font-size: 1rem;
+                transition: all 300ms ease;
+                margin: 1rem 0;
+            }
+
+            #loadBtn:hover {
+                background: rgb(0, 0, 0);
+            }
+
+            #results {
+                margin: 1.5rem 0;
+                text-align: left;
+            }
+
+            #results p {
+                padding: .5rem 0;
+                border-bottom: 1px solid rgb(220, 220, 220);
+            }
+
+            .back-btn {
+                display: inline-block;
+                margin-top: 1.5rem;
+                padding: 0.75rem 1.5rem;
+                border: rgb(53, 53, 53) 0.1rem solid;
+                border-radius: 2rem;
+                font-family: "Poppins", sans-serif;
+                font-weight: 600;
+                color: black;
+                text-decoration: none;
+                transition: all 300ms ease;
+            }
+
+            .back-btn:hover {
+                background: rgb(53, 53, 53);
+                color: white;
+            }
+
+            h1 {
+                cursor: default;
+            }
+        </style>
     </head>
 
     <body>
@@ -13,10 +76,16 @@
 
         <p id="status"></p>
 
-        <p>
-            Temperature: <span id="temp">--</span> °C
-        </p>
+        <div id="results">
+            <p>Temperature: <span id="temp">--</span> °F</p>
+            <p>Feels Like: <span id="feels">--</span></p>
+            <p>Humidity: <span id="humidity">--</span></p>
+            <p>Wind: <span id="wind">--</span></p>
+            <p>Condition: <span id="condition">--</span></p>
+        </div>
 
         <script src="demo.js"></script>
+
+        <a href="index.html" class="back-btn">← Back to Portfolio</a>
     </body>
-</html>-->
+</html>
